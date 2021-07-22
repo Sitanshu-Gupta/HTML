@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <title>Assignment 1</title>
+        <style>
+            table, td, th, tr{
+                padding: 10px;
+                border-spacing: 10px;
+                text-align: center;
+                background-color: #eaeeede7;
+            }
+            table{
+                border: 5px solid gray;
+                border-style: outset;
+            }
+            tr, th, td{
+                border: 2px solid gray;
+                border-style: inset;
+            }
+            #left{
+                text-align: left;
+            }
+            #upright{
+                text-orientation: upright;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>This is Time Table</h1>
+        <table>
+            <tr>
+                <th>Days / Periods</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th></th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+            </tr>
+            <tr>
+                <td id="left">Mon</td>
+                <td>Science</td>
+                <td>English</td>
+                <td>Hindi</td>
+                <td rowspan="6" id="upright">B<br>R<br>E<br>A<br>K</td>
+                <td>Maths</td>
+                <td>Games</td>
+                <td>Moral Science</td>
+            </tr>
+            <tr>
+                <td id="left">Tue</td>
+                <td>Science</td>
+                <td>English</td>
+                <td>Hindi</td>
+                <td>Maths</td>
+                <td>Games</td>
+                <td>Moral Science</td>
+            </tr>
+            <tr>
+                <td id="left">Wed</td>
+                <td>Science</td>
+                <td>English</td>
+                <td rowspan="3">Hindi</td>
+                <td>Maths</td>
+                <td>Games</td>
+                <td>Moral Science</td>
+            </tr>
+            <tr>
+                <td id="left">Thur</td>
+                <td>Science</td>
+                <td>English</td>
+                <td>Maths</td>
+                <td>Games</td>
+                <td>Moral Science</td>
+            </tr>
+            <tr>
+                <td id="left">Fri</td>
+                <td>Science</td>
+                <td>English</td>
+                <td>Maths</td>
+                <td>Games</td>
+                <td>Moral Science</td>
+            </tr>
+            <tr>
+                <td id="left">Sat</td>
+                <td>Science</td>
+                <td>English</td>
+                <td>Hindi</td>
+                <td id="left" colspan="3">Maths</td>
+            </tr>
+             <tr>
+                <th colspan="8">This is Class VIII</th>
+            </tr>
+        </table>
+        <br><br>
+        <h1>My Boi Data</h1>
+        <form>
+           <fieldset>
+               <legend>Personal Information</legend>
+               FirstName: <input type="text" placeholder="First Name">
+               LastName: <input type="text" placeholder="Last Name"><br><br>
+               Male: <input type="radio" name="Sex" value="Male">
+               Female: <input type="radio" name="Sex" value="Female">
+               Other: <input type="radio" name="Sex" value="Other"><br><br>
+               Date of Birth : <input type="date"><br><br>
+               E-Mail : <input type="email" placeholder="Enter Your Email"><br><br>
+               Phone<input type="tel" maxlength="10" placeholder="+91"><br><br>
+               Height <input type="text" placeholder="Height in Feet">
+           </fieldset>
+           <fieldset>
+               <legend>Education</legend>
+               School Name : <input type="text" placeholder="School Name"><br><br>
+               Class : <input type="number" placeholder="Enter Class"><br><br>
+               Stream :
+               <select name="Stream">
+                   <option>Stream</option>
+                   <option value="Non-Medical">Non-Medical</option>
+                   <option value="Medical">Medical</option>
+                   <option value="Commerce">Commerce</option>
+               </select><br><br>
+               Marksheet : <input type="file">
+           </fieldset><br>
+           <input type="submit">
+        </form>
+    </body>
+</html>
